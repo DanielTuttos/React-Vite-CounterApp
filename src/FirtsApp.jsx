@@ -14,5 +14,11 @@ export const FirtsApp = ({ title, subtitle }) => {
 // obliga a enviar valores requeridos
 FirtsApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number.isRequired
+    subtitle: PropTypes.string,
+
+}
+
+FirtsApp.defaultProps = {
+    title: 'no hay titulo',
+    subtitle: 'no hay subtitulo'
 }
